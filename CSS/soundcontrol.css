@@ -1,0 +1,104 @@
+.sound-control {
+    cursor: pointer;
+    transition: .25s ease;
+    color: black;
+    padding: 25px 26px;
+    font-size: 14px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    margin-right: 10px;
+}
+
+.control {
+    position: fixed;
+    top: 88.18%;
+    left: 88%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 350px) {
+    .control {
+        left: 67%;
+        top: 92%;
+    }
+
+    .sound-control {
+        padding: 13px 14px;
+        margin-right: 2px;
+    }
+
+    #to-top {
+        padding: 13px;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 420px) {
+    .control {
+        left: 69%;
+        top: 91.5%;
+    }
+
+    .sound-control {
+        padding: 13px 14px;
+        margin-right: 2px;
+    }
+
+    #to-top {
+        padding: 13px;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 700px) {
+    .control {
+        left: 68%;
+        top: 90%;
+    }
+
+    .sound-control {
+        padding: 18px 19px;
+        margin-right: 2px;
+    }
+
+    #to-top {
+        padding: 18px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .control {
+        left: 79%;
+        top: 87%;
+    }
+
+    .sound-control {
+        padding: 24px 25px;
+        margin-right: 2px;
+    }
+
+    #to-top {
+        padding: 24px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1350px) {
+    .control {
+        left: 83%;
+        top: 88%;
+    }
+
+    .sound-control {
+        padding: 24px 25px;
+        margin-right: 2px;
+    }
+
+    #to-top {
+        padding: 24px;
+    }
+}

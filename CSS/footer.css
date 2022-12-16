@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+  }
+
+  footer {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 38px 20px 38px;
+    color: #2f2f2f;
+    background-color: rgb(116,207,226);
+  }
+  
+  .contactUs {
+    margin-bottom: 2em;
+    flex: 1 100%;
+  }
+
+  .contactUs img {
+    width: 25%;
+  }
+  
+  .contactUs h2 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white
+  }
+  
+  footer address {
+    font-style: normal;
+    color: white;
+  }
+  
+  .button-linkTree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.1);
+    border-radius: 8px;
+    color: #2f2f2f;
+    margin: 20px 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+  
+  footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  footer li {
+    line-height: 2em;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  .footer-Nav {
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: wrap;
+  }
+  
+  .footer-Nav > * {
+    flex: 1 100%;
+    margin-right: 2.5em;
+  }
+  
+  .footer-navUl a {
+    color: white;
+    transition: .25s ease;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+  }
+
+  .footer-navUl a:hover {
+    color: black;
+  }
+
+  .footer-navList {
+    margin-bottom: 28px;
+  }
+  
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    flex: 1 100%
+  }
+    
+
+@media screen and (max-width: 425px) {
+  .contactUs img {
+    width: 50%
+  }
+
+  .footer-Nav > * {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+  /* .footer-Nav > * {
+    margin-right: 0;
+  } */
+
+  .footer-Nav > * {
+    flex: 1 25%;
+  }
+
+  .nav-second, .nav-third {
+    margin-right: 0;
+  }
+}
+
+  
+@media screen and (min-width: 28.375em) {
+    .copyright .madeBy {
+      margin-left: auto;
+    }
+    .button-linkTree {
+      margin-top: 20px;
+    }
+
+}
+  
+@media screen and (min-width: 48.375em) {
+    .contactUs {
+      margin-bottom: 20px;
+    }
+
+    .footer-Nav > * {
+      flex: 1;
+    }
+    
+    .contactUs {
+      flex: 0.6;
+    }
+    
+    .footer-Nav {
+      flex: 2;
+    }
+    .nav-third {
+      margin-right: 0;
+    }
+}
