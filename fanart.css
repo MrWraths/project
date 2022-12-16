@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    z-index: 9999;
+}
+
+body {
+    background: url("Assets/Photoshop Assets/background-wallpaper.jpeg") center fixed;
+    background-size: cover;
+}
+
+.container-header {
+    padding-top: 120px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.container-header h1 {
+    padding: 40px 0 50px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.fill {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #063F5C;
+    border: 1px #063F5C solid;
+    border-radius: 4px;
+    outline: 0;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #063F5C;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: right 0.09s ease-in;
+    -webkit-transition: right 0.09s ease-in;
+    -moz-transition: right 0.09s ease-in;
+    -ms-transition: right 0.09s ease-in;
+    -o-transition: right 0.09s ease-in;
+}
+
+.fill:hover:before {
+    right: 0;
+}
+
+#myBtnShow, #bookmarkFanArt {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+.active {
+    background-color: #063F5C;
+    color: white;
+}
+
+.container-fanart {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.container-fanart h1 {
+    text-align: left;
+    font-size: 42px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+.list-ilustrasi {
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
+    justify-items: center;
+}
+
+.talents {
+    width: 75%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.talents img {
+    width: 100%;
+    scale: 1.1;
+    transition: .25s ease;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+}
+
+.talents img:hover {
+    opacity: 0.6;
+}
+
+#to-top {
+    position: fixed;
+    transition: .25s ease;
+    color: black;
+    top: 87%;
+    left: 90%;
+    z-index: 2;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #063F5C;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+}
+
+#to-top:hover {
+    color: white;
+    background-color: #063F5C;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .container-header h1 {
+        font-size: 60px;
+    }
+
+    .list-ilustrasi {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    #to-top {
+        left: 80%;
+        top: 88%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #to-top {
+        left: 80%;
+        top: 88%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .list-ilustrasi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #to-top {
+        left: 80%;
+        top: 88%;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #myBtnShow {
+        width: 90%;
+    }
+}

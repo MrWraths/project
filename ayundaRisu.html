@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Assets/hololive-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!--Link Css-->
+  <link rel="stylesheet" href="ayundaRisu.css">
+  <link rel="stylesheet" href="CSS/font-worksans.css">
+  <link rel="stylesheet" href="CSS/navigation-bar.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/soundcontrol.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>Ayunda Risu | Talent ID</title>
+
+  <style>
+    @media only screen and (min-width: 52em) {
+      nav {
+        background-color: white;
+        width: 100%;
+      }
+
+      nav a {
+        color: black;
+        text-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar top -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="Logo Fanbase hololive (shadow).png" alt="hololive_logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="talent.html">Talents</a></li>
+        <li><a href="fanart.html">Fan Art</a></li>
+        <li><a href="Join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar top -->
+
+  <!-- Header -->
+  <header id="top">
+    <div class="container-talentName reveal">
+      <h1>Ayunda Risu</h1>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <!-- Main Content -->
+  <main>
+    <section>
+
+      <!-- Button Bookmark -->
+      <div id="myBtnShow" class="reveal">
+        <a href="#Video"><button class="fill">Video Pengenalan</button></a>
+        <a href="#Kepribadian"><button class="fill">Kepribadian</button></a>
+        <a href="#Profil"><button class="fill">Profil</button></a>
+        <a href="#Sejarah"><button class="fill">Sejarah</button></a>
+        <a href="#Trivia"><button class="fill">Trivia</button></a>
+        <a href="#Maskot"><button class="fill">Maskot & Fans</button></a>
+        <a href="#Kostum"><button class="fill">Kostum & Logo</button></a>
+        <a href="#VideoPopuler"><button class="fill">Video Populer</button></a>
+        <a href="#Platform"><button class="fill">Platform</button></a>
+      </div>
+      <!-- Button Bookmark -->
+
+
+      <div class="container-info reveal">
+
+        <!-- asidebar information (table) -->
+        <div class="column asidebar">
+          <table>
+            <tr>
+              <th colspan="2">
+                <h3>Ayunda Risu</h3>
+              </th>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="Assets/Ayunda Risu/Ayunda_Risu.webp" alt="risu_profile"></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p><i>Puru-Puru Ganbari Risu~</i></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h3>Informasi Dasar</h3>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Nama asli</p>
+              </td>
+              <td class="info">
+                <p>Tupaia Splendidula</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Nama<br>panggilan</p>
+              </td>
+              <td>
+                <ul class="listInfo">
+                  <li>Risu</li>
+                  <li>Ayunda</li>
+                  <li>Alter Risu</li>
+                  <li>Tupaisen</li>
+                  <li>Okakoro Child (dari Inugami Korone)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Tanggal Debut</p>
+              </td>
+              <td class="info">
+                <p>10 April 2020 (YouTube)</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Desainer karakter</p>
+              </td>
+              <td>
+                <ul class="listInfo">
+                  <li>Ilustrasi: Yatomi</li>
+                  <li>Pemodelan: </li>
+                  <li>Asal: Kanbutsu Himono</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Afiliasi</p>
+              </td>
+              <td class="info">
+                <p>Hololive Indonesia</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h3>Media</h3>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Saluran</p>
+              </td>
+              <td class="info">
+                <p>Ayunda Risu Ch.</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Media Sosial</p>
+              </td>
+              <td>
+                <ul class="listInfo">
+                  <li>Twitter</li>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Situs resmi</p>
+              </td>
+              <td>
+                <ul class="listInfo">
+                  <li>hololive.tv (English)</li>
+                  <li>hololive.tv (Japanese)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h3>Deskripsi Fisik</h3>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Jenis Kelamin</p>
+              </td>
+              <td class="info">
+                <p>Perempuan</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Umur</p>
+              </td>
+              <td class="info">
+                <p>17 Tahun</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Tanggal Lahir</p>
+              </td>
+              <td class="info">
+                <p>15 Januari</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Tinggi</p>
+              </td>
+              <td class="info">
+                <p>154 cm</p>
+              </td>
+            </tr>
+            <tr class="mainInfo">
+              <td class="headerInfo">
+                <p>Zodiak</p>
+              </td>
+              <td class="info">
+                <p>Capricorn</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- asidebar information (table) -->
+
+        <!-- main content information -->
+        <div class="column mainContent">
+          <div class="reveal">
+            <h1>Ayunda Risu</h1>
+            <p id="Video">Ayunda Risu (アユンダ・リス) adalah Virtual YouTuber wanita Indonesia yang terkait dengan hololive,
+              sebagai
+              bagian
+              dari VTuber generasi pertama cabang Indonesia (ID) bersama dengan Airani Iofifteen dan Moona Hoshinova.
+            </p>
+          </div>
+          <div class="reveal">
+            <h1>Video Pengenalan</h1>
+            <div class="video containerContent">
+              <figure>
+                <div class="videoBorder">
+                  <a href="https://www.youtube.com/watch?v=ozANadM_Y8U&t=5s" target="_blank" rel="noopener noreferrer"><img src="Assets/Thumbnail - Ayunda Risu (Debut).jpg" alt="risu_Debut" width="100%"></a>
+                
+                  <i class="fa fa-play-circle play-2"></i>
+                </div>
+                <figcaption id="Kepribadian">【hololive Indonesia first debut】Can Squirrel be an Idol too ? 【Ayunda
+                  Risu】</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="reveal">
+            <h1>Kepribadian</h1>
+            <p>Risu memiliki kepribadian yang humoris, berenergi tinggi, dan sangat ramah. Interaksi Risu dengan Moona
+              dan
+              Iofi, anggota hololive lainnya dan siapa pun pada umumnya, telah memberinya reputasi sebagai orang yang
+              sangat manis, baik hati, dan menarik.
+
+              <br><br id="Profil">Menurut dirinya sendiri dia bisa digambarkan sebagai orang yang ceria, canggung dan
+              cengeng.
+            </p>
+          </div>
+          <div class="reveal">
+            <h1>Profil</h1>
+            <p>Seorang gadis tupai yang berasal dari hutan ajaib.
+              <br><br>
+              Dia pernah tersesat di alam manusia, tapi kemudian diselamatkan oleh seorang wanita baik hati yang
+              sekarang
+              tinggal dengannya. Dia memperlakukan wanita ini sebagai kakak perempuannya.
+              <br><br id="Sejarah">
+              Dia memulai debutnya sebagai VTuber hanya untuk membalasnya.
+            </p>
+          </div>
+        </div>
+        <!-- main content information -->
+
+
+        <!-- main content information (continue) break from display grid -->
+        <div class="column mainContent continueContent reveal">
+          <div class="reveal">
+            <h1>Sejarah</h1>
+            <h3>Latar Belakang</h3>
+            <p>Akun Twitternya dibuat pada Maret 2020, sedangkan tweet pertamanya dibuat pada 6 April, sedangkan saluran
+              YouTube-nya dibuat pada 3 Maret dan streaming debutnya pada 10 April.</p>
+            <h3>2020</h3>
+            <p>Pada tanggal 29 Juni, saluran utama hololive Indonesia menerbitkan sebuah cover dari Ochame Kinou
+              menampilkan semua anggota Hololive ID generasi pertama, membuat lagu cover tersebut menjadi lagu cover
+              pertama Risu.
+              <br><br>
+              Pada tanggal 14 Agustus, diumumkan di akun Twitter resmi hololive Indonesia bahwa anggota Generasi ke-1
+              akan
+              mendapatkan pakaian baru untuk setiap peringatan Hari Kemerdekaan Indonesia.
+              <br><br>
+              Pada 16 Agustus, dia memulai debutnya dengan kostum 2D keduanya. Dalam kostum ini, ia mengenakan gaun
+              bermotif bunga berwarna putih, dengan ikat pinggang di bagian dada, ia juga menggunakan topi kecil di
+              telinga kirinya.
+              <br><br>
+              Pada 10 November, Risu menayangkan perdana solo cover pertamanya , "KING" oleh Kanaria.
+              <br><br>
+              Pada 6 Desember, Risu meraih 300.000 pelanggan di Youtube. Dia adalah anggota hololive ke-38 yang mencapai
+              ambang itu, dan anggota Indonesia ke-2 yang mendapatkannya.
+            </p>
+            <h3>2021</h3>
+            <p id="Trivia">Pada 11 Maret, Risu meraih 400.000 pelanggan di Youtube.</p>
+          </div>
+          <div class="reveal">
+            <h1>Trivia</h1>
+            <ul class="trivia-list">
+              <li>Nama asli Risu "Tupaia Splendidula" diasumsikan sebagai nama ilmiah dari spesiesnya, Tupai merah. Bisa
+                juga merupakan campuran bahasa dan kata dari bahasa Indonesia ("tupai") dan bahasa Inggris ("splendid"
+                yang berarti "indah"), yang sepenuhnya berarti "Tupai Indah".</li>
+              <li>Selain bahasa Indonesia, dia juga bisa berbahasa Inggris dan Jepang.</li>
+              <li>Risu memiliki jangkauan vokal yang sangat luas, bahkan untuk seorang penyanyi. Atas permintaan
+                penggemar, dia mampu menggambarkan berbagai identitas melalui sok suara, bahkan peniruan yang meyakinkan
+                dari anggota hololive lainnya. Penggemar Risu sering menyebut identitas yang ditiru melalui suara ini
+                sebagai "Risu DLC's".</li>
+              <li>Karena rentang vokalnya yang lebar, gaya tawanya seperti peluit dan mengatakan bahwa dia adalah
+                penggemar berat Inugami Korone, ada lelucon bahwa Risu adalah anak dari Korone dan Nekomata Okayu.</li>
+              <li>Dia juga akrab dengan Zen Gunawan, Vtuber laki-laki Indonesia dari MAHAPANCA, dan sudah beberapa kali
+                berkolaborasi.</li>
+              <li>Karena aktingnya yang berkualitas ini sebagai penguatan bakat menyanyinya, banyak penggemar bercanda
+                bahwa dia telah membantu memulihkan mimpi Motoaki Tanigo (juga dikenal luas dengan julukan "YAGOO")
+                untuk
+                membuat perusahaan idola.</li>
+              <li>Dia tinggal serumah bersama dengan anggota hololive Generasi Pertama Indonesia, Moona Hoshinova dan
+                Airani Iofifteen.</li>
+              <li>Dia takut pada anjing</li>
+              <li>Dia bagian dari grup bernama "Kirakira Collab" (キ ラ キ ラ コ ラ ボ), bersama dengan Airani Iofifteen,
+                Arurandeisu dan Aragami Oga. Mereka melakukan streaming game bersama sebulan sekali.</li>
+              <li>Dia memiliki kepekaan arah yang buruk, ditunjukkan dalam aliran DOOM pertamanya.</li>
+              <li>Fanart tag #GambaRisu berasal dari kata "Gambar + Risu" dari bahasa Indonesia yang secara harfiah
+                berarti Gambar / Gambar Risu</li>
+              <li>Dimulai pada 1 November 2020 dan berakhir pada 30 November 2020, Risu telah memposting video pendek di
+                salurannya untuk memperingati "Nonstop Nut November" (parodi dari meme internet "No Nut November"), di
+                mana dia memuji kebaikan berbagai kacang dan betapa dia, seorang gadis tupai, mencintai mereka.</li>
+              <li id="Maskot">Setelah "Nonstop Nut November" berakhir pada 30 November 2020, Risu segera memulai DDD,
+                atau "Devour
+                Donut December", keesokan harinya pada tanggal 1 Desember, dan membicarakan tentang jenis, rasa, atau
+                hal-hal sepele yang berbeda tentang donat setiap hari.</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h1>Maskot & Fans</h1>
+            <h3>Maskot</h3>
+            <p>Maskotnya adalah tupai merah muda yang memakai topi, kalung dan jepit rambut yang mirip
+              dengan miliknya
+              bernama "Riscot", yang digambar oleh Aragami Oga.</p>
+            <h3>Fans</h3>
+            <p id="Kostum">Fanbase-nya secara resmi disebut "Rsuners" (berdasarkan kata "Listeners"), atau "Prisuners"
+              (berdasarkan kata "Prisoners") untuk para anggota.</p>
+          </div>
+          <div class="reveal">
+            <h1>Kostum & Logo</h1>
+            <div class="custom containerContent">
+              <img src="Assets/Ayunda Risu/logo_ayundaRisu.png" alt="risu_logo" width="300">
+              <img src="Assets/Ayunda Risu/AyundaRisu_kostumAsli.png" alt="risu_asli" width="100">
+              <img src="Assets/Ayunda Risu/hololiveGen1_Risu.png" alt="risu_3D" width="180">
+              <img src="Assets/Ayunda Risu/AyundaRisu_kostum1.jpg" alt="risu_kostum pertama" width="100">
+              <img src="Assets/Ayunda Risu/AyundaRisu_kostum2.jpg" alt="risu_kostum kedua" width="105"
+                id="VideoPopuler">
+            </div>
+          </div>
+          <div class="reveal">
+            <h1>Video Populer</h1>
+            <div class="video containerContent reveal">
+              <figure>
+                <div class="videoBorder">
+                  <a href="https://www.youtube.com/watch?v=PYzTq7YEPBI" target="_blank" rel="noopener noreferrer"><img
+                      src="Assets/Thumbnail - Ayunda Risu (KING).jpg" alt="risu_King" width="100%"></a>
+                  <i class="fa fa-play-circle play-1"></i>
+                </div>
+                <figcaption>【COVER】KING - Kanaria【Ayunda Risu】</figcaption>
+              </figure>
+              <figure>
+                <div class="videoBorder">
+                  <a href="https://www.youtube.com/watch?v=IGviVpVE1fA" target="_blank" rel="noopener noreferrer"><img
+                      src="Assets/Thumbnail - Ayunda Risu (Alice&ru).jpg" alt="risu_ALiCE&u" width="100%"></a>
+                  <i class="fa fa-play-circle play-2"></i>
+                </div>
+                <figcaption>【Original Song】ALiCE&u【Ayunda Risu】</figcaption>
+              </figure>
+              <figure>
+                <div class="videoBorder">
+                  <a href="https://www.youtube.com/watch?v=0YX80lIi36w" target="_blank" rel="noopener noreferrer"><img
+                      src="Assets/Thumbnail - Ayunda Risu (Daddy Daddy Do).jpg" alt="risu_DaddyDaddyDo"
+                      width="100%"></a>
+                  <i class="fa fa-play-circle play-2"></i>
+                </div>
+                <figcaption id="Platform">【歌ってみた】DADDY ! DADDY ! DO !【Ayunda Risu & 荒咬オウガ】</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="reveal">
+            <h1>Platform</h1>
+            <div class="platform containerContent">
+              <a href="https://www.instagram.com/ayunda_risu/" target="_blank" rel="noopener noreferrer"> <img
+                  src="Assets/Sosmed/instagram.png" alt="instagram_logo" width="100" title="Instagram"></a>
+              <a href="https://twitter.com/ayunda_risu" target="_blank" rel="noopener noreferrer"> <img
+                  src="Assets/Sosmed/twitter.png" alt="twitter_logo" width="100" title="Twitter"></a>
+              <a href="https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw" target="_blank"
+                rel="noopener noreferrer"> <img src="Assets/Sosmed/youtube.png" alt="youtube_logo" width="100"
+                  title="Youtube"></a>
+              <a href="https://www.facebook.com/ayundarisuholoID/" target="_blank" rel="noopener noreferrer"> <img
+                  src="Assets/Sosmed/facebook.png" alt="facebook_logo" width="100" title="Facebook"></a>
+            </div>
+          </div>
+        </div>
+        <!-- main content information (continue) break from display grid -->
+      </div>
+    </section>
+  </main>
+  <!-- Main Content -->
+
+  <!-- Go Back -->
+  <div class="back">
+    <a href="talent.html"><button class="fill goback">Back to Talents</button></a>
+  </div>
+  <!-- Go Back -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="contactUs">
+      <img src="Logo Fanbase hololive (non-shadow).png" alt="logo_hololiveFanBase">
+      <h2>Contact</h1>
+
+        <address>
+          Jawa Barat - Bandung<br>
+
+          <a class="button-linkTree" href="https://msha.ke/holoidfanpage" target="_blank">Contact Us</a>
+        </address>
+    </div>
+
+    <ul class="footer-Nav">
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 1</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="moonaHoshinova.html">Moona Hoshinova</a>
+          </li>
+
+          <li>
+            <a href="airaniIofifteen.html">Airani Iofifteen</a>
+          </li>
+
+          <li>
+            <a href="ayundaRisu.html">Ayunda Risu</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 2</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="kureijiOllie.html">Kureiji Ollie</a>
+          </li>
+
+          <li>
+            <a href="anyaMelfissa.html">Anya Melfissa</a>
+          </li>
+
+          <li>
+            <a href="pavoliaReine.html">Pavolia Reine</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-second">
+        <h2 class="nav-title">Gen 3</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="vestiaZeta.html">Vestia Zeta</a>
+          </li>
+
+          <li>
+            <a href="koboKanaeru.html">Kobo Kanaeru</a>
+          </li>
+
+          <li>
+            <a href="kaelaKovalskia.html">Kaela Kovalskia</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Fanart</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="fanart.html">Video</a>
+          </li>
+
+          <li>
+            <a href="fanart.html">Illustration</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-third">
+        <h2 class="nav-title">Join</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="join.html">Rules</a>
+          </li>
+
+          <li>
+            <a href="join.html">Join Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <p>&copy; 2022 Kelompok 1 - Tugas Besar. All rights reserved.</p>
+
+      <div class="madeBy">
+        <span>Made by Aqbil, Roger, Filbert, Habil</span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Controls/Preloader -->
+  <audio src="Assets/Audio/Ayunda Risu - Alice&ru (Instrumental).mp3" id="music_background" loop></audio>
+
+  <div class="preloader-web">
+    <img src="Assets/Video/AyundaRisu.gif" alt="gif_ayundaRisu">
+  </div>
+
+  <div class="control">
+    <button class="sound-control"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true" id="to-top"></i></a>
+  </div>
+  <!-- Controls/Preloader -->
+
+  <script src="JS/sound-control.js"></script>
+  <script>
+
+    //top navbar akan diberi style khusus jika user mulai scrolling
+    const nav = document.querySelector('nav');
+    const a = document.querySelectorAll('.navbar-menu a');
+    window.onscroll = function () {
+      var top = window.scrollY;
+      console.log(top);
+      for (let index = 0; a.length; index++) {
+        if (top >= 50) {
+          nav.classList.add('activeScroll_nav');
+          a[index].classList.add('activeScroll_link');
+        } else {
+          nav.classList.remove('activeScroll_nav');
+          a[index].classList.remove('activeScroll_link');
+        }
+      }
+    }
+
+    //animasi fadeIn jika user scrolling web browser
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+
+
+
+    // Untuk mencegah web browser scrolling secara Vertikal (Y) diremove class nya setelah * detik
+    const preloaderDone = setTimeout(bodyOverflow, 5000);
+    const body = document.querySelector('body');
+    body.classList.add('preloading');
+    function bodyOverflow() {
+      body.classList.remove('preloading');
+    }
+
+    // //membuat web browser tertimpah dengan gambar preloader khusus, dan akan menghilang setelah * detik
+    $(window).on("load", function () {
+      $(".preloader-web").delay(5000).fadeOut(500);
+    });
+
+    //Function untuk mendelay audio selama 5 detik, dan set volume 40%
+    const audio = document.getElementById("music_background");
+    audio.volume = 0.4;
+
+  </script>
+
+</body>
+
+</html>

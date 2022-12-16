@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Assets/hololive-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!--Link Css-->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="CSS/font-worksans.css">
+  <link rel="stylesheet" href="CSS/navigation-bar.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+
+  <link rel="stylesheet" href="Slick/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="Slick/slick-1.8.1/slick/slick-theme.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    .slider {
+      width: 100%;
+      margin: 40px 100px auto auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+  <title>Hololive Fanpage</title>
+</head>
+
+<body>
+
+  <!--Hololive Navigation Bar-->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="Logo Fanbase hololive (shadow).png" alt="hololive_logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="talent.html">Talents</a></li>
+        <li><a href="fanart.html">Fan Art</a></li>
+        <li><a href="Join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Hololive Navigation Bar-->
+
+
+  <!-- video didekat navbar -->
+  <div class="videoHeader">
+    <video id="video_background" width="auto" preload="true" muted loop>
+      <source src="Assets/Video/Hololive - Bebas.mp4">
+    </video>
+  </div>
+  <!-- video didekat navbar -->
+
+  <main>
+
+    <section class="section-introduction-header">
+      <div class="container introduction-header">
+        <h1>HOLOLIVE FANPAGE</h1>
+        <p>Selamat Datang Di Komunitas & Fanbase Hololive Indonesia!</p>
+      </div>
+
+      <div class="wrapper final-wrapper">
+        <img src="Assets/Photoshop Assets/background-notebook.png" alt="background_allMemberHoloID" width="100%"
+          usemap="#talentHoloID">
+
+        <map name="talentHoloID">
+          <area target="" alt="kureiji_ollie" title="Kureiji Ollie" coords="0,330,160,436" shape="rect">
+          <area target="" alt="pavolia_reine" title="Pavolia Reine" coords="182,359,250,436" shape="rect">
+          <area target="" alt="anya_melfissa" title="Anya Melfissa" coords="308,358,376,436" shape="rect">
+          <area target="" alt="ayunda_risu" title="Ayunda Risu" coords="432,357,496,436" shape="rect">
+          <area target="" alt="moona_hoshinova" title="Moona Hoshinova" coords="536,300,662,436" shape="rect">
+          <area target="" alt="airani_iofifteen" title="Airani Iofifteen" coords="729,360,785,436" shape="rect">
+          <area target="" alt="vestia_zeta" title="Vestia Zeta" coords="844,358,917,436" shape="rect">
+          <area target="" alt="kaela_kovalskia" title="Kaela Kovalskia" coords="968,351,1041,436" shape="rect">
+          <area target="" alt="kaela_kovalskia" title="Kobo Kanaeru" coords="1076,330,1192,436" shape="rect">
+        </map>
+      </div>
+    </section>
+
+
+    <section class="section-achievementsCompany">
+      <div class="container achievementsCompany">
+        <h1>Pencapaian</h1>
+        <div class="center slider" style="width: 100%;">
+          <div class="sliderContent">
+            <img src="Assets/pencapaian_1.png">
+          </div>
+          <div class="sliderContent">
+            <img src="Assets/pencapain_extra.png">
+          </div>
+          <div class="sliderContent">
+            <img src="Assets/pencapain_3.jpg">
+          </div>
+          <div class="sliderContent">
+            <img src="Assets/pencapain_4.png">
+          </div>
+          <div class="sliderContent">
+            <img src="Assets/pencapain_5.jpg">
+          </div>
+          <div class="sliderContent">
+            <img src="Assets/pencapain_6.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-officialHoloVideo">
+      <div class="container achievementsCompany">
+        <h1>Official Videos</h1>
+        <div class="center slider" style="width: 100%;">
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=lFQW5S_xH1o" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Bahasa Daerah Medley).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=wlyRGXUwjVA" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Bebas).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=XSZNNbbVuho" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Hi-15).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=sWB2jpd333Q" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Identity Gen3).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=Wp90CrP-s_8" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Identity).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=uf9YfzyLG2Q" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Ochame Kinou Gen1).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=eJjz3owWnbU" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Ochame Kinou Gen2).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=vpViBoIVrk0" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Hololive Video (Shiny Smily Story).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bestVideoHoloTalent">
+      <div class="container achievementsCompany">
+        <h1>Best Talent Videos</h1>
+        <div class="center slider">
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=jaf_SBcDhFU" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Airani Iofifteen (Alien Alien).jpg" alt="iofi_alien" width="100%"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=mqwRg9ZgANI" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Anya Melfissa (Phony).jpg" alt="anya_Phony" width="100%"></a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=PYzTq7YEPBI" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Ayunda Risu (KING).jpg" alt="risu_King" width="100%"></a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=MRg1OuBU_i8" target="_blank" rel="noopener noreferrer">
+              <img src="Assets/Thumbnail - Kaela Kovalskia (Phoenix).jpg">
+            </a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=SF-_47-oCtk" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Kobo Kanaeru (Mantra Hujan).jpg" alt="kobo_Mantra Hujan" width="100%"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=oLOSu6ocgUU" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Kureiji Ollie (Kyouran Hey Kids!!).jpg" alt="ollie_HeyKids" width="100%"></a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=Jr3Z9qtBk7k" target="_blank" rel="noopener noreferrer"> <img
+                src="Assets/Thumbnail - Moona Hoshinova (KDA VILLAIN).jpg" alt="moona_KDA" width="100%"></a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=nbB3KsFRv4U" target="_blank" rel="noopener noreferrer"> <img
+                src="Assets/Thumbnail - Pavolia Reine (Beat Eaters).jpg" alt="reine_beateaters" width="100%"></a>
+            <i class="fa fa-play-circle play-1"></i>
+          </div>
+          <div class="sliderContent">
+            <a href="https://www.youtube.com/watch?v=wQ1_0oeXW6M" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/Thumbnail - Vestia Zeta (Zankyou).jpg"></a>
+            <i class="fa fa-play-circle play-2"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="holoCompany">
+
+      <div class="container about-holoCompany">
+        <h1>OFFICIAL SNS HOLOLIVE ID</h1>
+        <p>Kunjungi official Social Network Service (SNS) milik Hololive ID</p>
+      </div>
+
+      <div class="SNS container-SNS">
+        <a href="https://www.instagram.com/hololiveid_official/?hl=en" target="_blank" rel="noopener noreferrer"> <img
+            src="Assets/Sosmed/instagram.png" alt="instagram_logo" width="75" title="Instagram"></a>
+        <a href="https://www.tiktok.com/@hololiveid_official?lang=en" target="_blank" rel="noopener noreferrer"><img
+            src="Assets/Sosmed/tiktok.png" alt="tiktok_logo" width="75"></a>
+        <a href="https://twitter.com/hololive_Id" target="_blank" rel="noopener noreferrer"> <img
+            src="Assets/Sosmed/twitter.png" alt="twitter_logo" width="75" title="Twitter"></a>
+        <a href="https://www.youtube.com/@hololiveIndonesia" target="_blank" rel="noopener noreferrer">
+          <img src="Assets/Sosmed/youtube.png" alt="youtube_logo" width="75" title="Youtube"></a>
+        <a href="https://www.facebook.com/profile.php?id=100063546336394" target="_blank" rel="noopener noreferrer"> <img
+            src="Assets/Sosmed/facebook.png" alt="facebook_logo" width="75" title="Facebook"></a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="contactUs">
+      <img src="Logo Fanbase hololive (non-shadow).png" alt="logo_hololiveFanBase">
+      <h2>Contact</h1>
+
+        <address>
+          Jawa Barat - Bandung<br>
+
+          <a class="button-linkTree" href="https://msha.ke/holoidfanpage" target="_blank">Contact Us</a>
+        </address>
+    </div>
+
+    <ul class="footer-Nav">
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 1</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="moonaHoshinova.html">Moona Hoshinova</a>
+          </li>
+
+          <li>
+            <a href="airaniIofifteen.html">Airani Iofifteen</a>
+          </li>
+
+          <li>
+            <a href="ayundaRisu.html">Ayunda Risu</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 2</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="kureijiOllie.html">Kureiji Ollie</a>
+          </li>
+
+          <li>
+            <a href="anyaMelfissa.html">Anya Melfissa</a>
+          </li>
+
+          <li>
+            <a href="pavoliaReine.html">Pavolia Reine</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-second">
+        <h2 class="nav-title">Gen 3</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="vestiaZeta.html">Vestia Zeta</a>
+          </li>
+
+          <li>
+            <a href="koboKanaeru.html">Kobo Kanaeru</a>
+          </li>
+
+          <li>
+            <a href="kaelaKovalskia.html">Kaela Kovalskia</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Fanart</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="fanart.html">Video</a>
+          </li>
+
+          <li>
+            <a href="fanart.html">Illustration</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-third">
+        <h2 class="nav-title">Join</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="join.html">Rules</a>
+          </li>
+
+          <li>
+            <a href="join.html">Join Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <p>&copy; 2022 Kelompok 1 - Tugas Besar. All rights reserved.</p>
+
+      <div class="madeBy">
+        <span>Made by Aqbil, Roger, Filbert, Habil</span>
+      </div>
+    </div>
+  </footer>
+
+  <audio src="Assets/Audio/identity - Hololive Indonesia.mp3" id="music_background" loop type="audio/mp3"></audio>
+
+
+  <div class="preloader-web">
+    <img src="Assets/Video/Hololive_logo_animation.gif" alt="gif_loaderHolo">
+  </div>
+
+  <button class="sound-control"><i class="fa fa-play" aria-hidden="true"></i></button>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="Slick/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="Slick/slick-1.8.1/slick/slick.min.js"></script>
+
+  <script src="JS/home.js"></script>
+
+  <script>
+    $(document).on('ready', function () {
+      $('.center').slick({
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+
+</html>

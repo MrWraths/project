@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("Assets/Photoshop Assets/background-wallpaper.jpeg") center fixed;
+    background-size: cover;
+}
+
+button {
+    position: relative;
+    display:inline-block;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #063F5C;
+    border: 1px #063F5C solid;
+    border-radius: 4px;
+    outline: 0;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:         0.08s ease-in;
+    -ms-transition:         0.08s ease-in;
+    -moz-transition:         0.08s ease-in;
+    -webkit-transition:         0.08s ease-in;
+}
+  
+.fill:hover {
+    color: whitesmoke;
+}
+  
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #063F5C;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: right 0.09s ease-in;
+    -webkit-transition: right 0.09s ease-in;
+    -moz-transition: right 0.09s ease-in;
+    -ms-transition: right 0.09s ease-in;
+    -o-transition: right 0.09s ease-in;
+}
+  
+.fill:hover:before {
+    right: 0;
+}
+
+.container-headerTalent {
+    padding-top: 120px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+} 
+
+.container-headerTalent h1 {
+    padding: 40px 0 50px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#myBtnShow {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.active {
+    background-color: #063F5C;
+    color: white;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.talentlist {
+
+    list-style: none;
+}
+
+.talents {
+    display: inline-block;
+    margin: 10px;
+}
+
+.talents img {
+
+    transition: .25s ease;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+}
+
+.talents img:hover {
+    transform: translate(0, -5px);
+    -webkit-transform: translate(0, -5px);
+    -moz-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    -o-transform: translate(0, -5px);
+    box-shadow: 0px 0px 0px 7px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.talents h3 {
+    margin-top: 8px;
+}
+
+.talents p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 425px) {
+    .container-headerTalent h1 {
+        font-size: 60px;
+    }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    #myBtnShow {
+        width: 45%;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .talentlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .talents img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    .talentlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .talents img {
+        width: 100%;
+    }
+}

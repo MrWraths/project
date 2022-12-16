@@ -1,0 +1,212 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: url("Assets/Photoshop Assets/background-wallpaper.jpeg") center fixed;
+	background-size: cover;
+}
+
+
+.container-header {
+    padding-top: 120px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.container-header h1 {
+    padding: 20px 0 50px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.container-form {
+	width: 68%;
+	margin: auto;
+	padding: 30px 50px;
+	margin-bottom: 120px;
+	background-color: white;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.top {
+	flex: 1 100%;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.top img {
+	width: 8%;
+	flex: 1;
+}
+.top h1 {
+	font-size: 32px;
+	flex: 1 100%;
+	text-align: right;
+}
+
+.rules, .container-message{
+	flex: 1 100%;
+	margin: 40px 20px;
+}
+
+.rules li {
+	font-size: 24px;
+	list-style-type:square;
+	font-weight: bold;
+}
+
+.rules p {
+	line-height: 25px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.button {
+	flex: 1 100%;
+	text-align: right;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    border: 2px #063F5C solid;
+    border-radius: 4px;
+    outline: 0;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #063F5C;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: right 0.09s ease-in;
+    -webkit-transition: right 0.09s ease-in;
+    -moz-transition: right 0.09s ease-in;
+    -ms-transition: right 0.09s ease-in;
+    -o-transition: right 0.09s ease-in;
+}
+
+.fill:hover:before {
+    right: 0;
+}
+
+.reveal {
+	display: none;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form input {
+	border: 2px solid grey;
+	padding: 20px;
+	font-size: 18px;
+	width: 100%;
+	margin: 10px 0 20px 0;
+}
+
+#pria, #wanita, #anonim {
+	width: 10% !important;
+}
+
+
+
+.container-message {
+	text-align: center;
+}
+
+.container-message h1 {
+	font-size: 42px;
+}
+
+.container-message p {
+	padding: 20px;
+}
+
+@media only screen and (max-width: 424px) {
+	.container-form {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		width: 90%;
+	}
+
+	.top h1 {
+		font-size: 20px;
+	}
+
+	.container-message h1 {
+		font-size: 35px;
+	}
+
+	.container-message p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+	.container-form {
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 90%;
+	}
+
+	.rules li {
+		font-size: 22px;
+	}
+
+	.rules p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.top img {
+		width: 12%;
+		flex: 1;
+	}
+
+	.container-form {
+		width: 75%;
+	}
+
+	.container-form {
+		width: 90%;
+	}
+}
+

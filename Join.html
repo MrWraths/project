@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Assets/hololive-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="join.css">
+  <link rel="stylesheet" href="CSS/font-worksans.css">
+  <link rel="stylesheet" href="CSS/navigation-bar.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/alert-custom.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    @media only screen and (min-width: 52em) {
+      nav {
+        background-color: white;
+        width: 100%;
+      }
+
+      nav a {
+        color: black;
+        text-shadow: none;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      nav {
+        background-color: white;
+        width: 100%;
+      }
+
+      nav a {
+        color: black;
+        text-shadow: none;
+      }
+    }
+  </style>
+
+  <title>Join</title>
+
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="Logo Fanbase hololive (shadow).png" alt="hololive_logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="talent.html">Talents</a></li>
+        <li><a href="fanart.html">Fan Art</a></li>
+        <li><a href="Join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container-header">
+      <h1>Join</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="topContainer">
+      <div class="container-form">
+        <div class="pageRules">
+          <div class="top">
+            <img src="Assets/hololive-icon.png" alt="hololive_logo">
+            <h1>Rules</h1>
+          </div>
+          <div class="rules">
+            <ul>
+              <li>Wajib Menjaga Nama Baik Komunitas</li>
+              <p>Setiap member yang ingin join menjadi komunitas atau fanbase Hololive ID, wajib Menjaga Nama Baik
+                Komunitas.</p>
+              <li>Wajib Berumur diatas 13 Tahun</li>
+              <p>Setiap member yang ingin join diharapkan berumur diatas 13 tahun</p>
+              <li>Tidak memposting berbau SARA, Toxic, Politik, & Pornografi</li>
+              <p>Setiap member yang ingin join diharapkan tidak memposting berbau SARA, Toxic, Politik, & Pornografi.
+              </p>
+              <li>Tidak Menyalahgunakan Forum Komunitas</li>
+              <p>Setiap member yang ingin join diharapkan tidak menyalahgunakan forum komunitas.</p>
+              <li>Dilarang SPAM!</li>
+              <p>Setiap member yang ingin join, jika terbukti melakukan spam maka akan dikenakan sanksi.</p>
+              <li>Dilarang Melakukan Aktivitas Komersial</li>
+              <p>Setiap member yang ingin join jika terbukti melakukan aktivitas komersial didalam komunitas ini, maka
+                akan dkenakan sanksi</p>
+              <li>Wajib Patuhi Aturan Yang Sudah Tertera</li>
+              <p>Setiap member yang ingin join jika terbukti melanggar maka akan dikenakan sanksi berat.</p>
+            </ul>
+          </div>
+          <div class="button">
+            <a href="#topContainer"><button class="fill read">Saya Sudah Baca</button></a>
+          </div>
+        </div>
+
+        <div class="reveal pageForm">
+          <div class="top">
+            <img src="Assets/hololive-icon.png" alt="hololive_logo">
+            <h1>Form</h1>
+          </div>
+
+          <form>
+
+            <div class="flex">
+              <label for="nama" class="label1">Nama Lengkap</label>
+              <div class="alert warning errorReveal text1">
+                <strong>INVALID!</strong> Input tidak boleh kosong!
+              </div>
+            </div>
+
+            <input type="text" placeholder="Nama Lengkap" name="nama" required>
+
+            <div class="flex">
+              <label for="tanggal" class="label2">Tanggal Lahir</label>
+              <div class="alert warning errorReveal text2">
+                <strong>INVALID!</strong> Umur harus diatas 13 tahun!
+              </div>
+            </div>
+
+            <input type="date" name="tanggal" required id="ultah">
+            <label for="tanggal">Jenis Kelamin</label>
+            <br>
+            <input type="radio" name="pilihan" id="pria" value="pria">
+            <label for="pria">Pria</label>
+            <br>
+            <input type="radio" name="pilihan" id="wanita" value="wanita">
+            <label for="wanita">Wanita</label>
+            <br>
+            <input type="radio" name="pilihan" id="anonim" value="anonim">
+            <label for="anonim">Tidak ingin diketahui</label>
+            <br>
+            <br>
+
+            <div class="flex">
+              <label for="telepon" class="label3">Nomor Telephone</label>
+              <div class="alert warning errorReveal text3">
+                <strong>INVALID!</strong> Input nomor yang valid.
+              </div>
+            </div>
+
+            <input type="text" name="telepon" placeholder="+62" id="telepon" required>
+          </form>
+
+          <div class="button">
+            <button class="fill submit" id="button-submit">Submit</button>
+          </div>
+        </div>
+
+        <div class="reveal message">
+          <div class="top">
+            <img src="Assets/hololive-icon.png" alt="hololive_logo">
+            <h1>Pesan</h1>
+          </div>
+
+          <div class="container-message">
+            <h1>Terima kasih!</h1>
+            <p>Telah menjadi anggota baru dalam komunitas fanbase Hololive ID!
+            </p>
+          </div>
+
+          <div class="button">
+            <button class="fill back">Kembali</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contactUs">
+      <img src="Logo Fanbase hololive (non-shadow).png" alt="logo_hololiveFanBase">
+      <h2>Contact</h1>
+
+        <address>
+          Jawa Barat - Bandung<br>
+
+          <a class="button-linkTree" href="https://msha.ke/holoidfanpage" target="_blank">Contact Us</a>
+        </address>
+    </div>
+
+    <ul class="footer-Nav">
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 1</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="moonaHoshinova.html">Moona Hoshinova</a>
+          </li>
+
+          <li>
+            <a href="airaniIofifteen.html">Airani Iofifteen</a>
+          </li>
+
+          <li>
+            <a href="ayundaRisu.html">Ayunda Risu</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Gen 2</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="kureijiOllie.html">Kureiji Ollie</a>
+          </li>
+
+          <li>
+            <a href="anyaMelfissa.html">Anya Melfissa</a>
+          </li>
+
+          <li>
+            <a href="pavoliaReine.html">Pavolia Reine</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-second">
+        <h2 class="nav-title">Gen 3</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="vestiaZeta.html">Vestia Zeta</a>
+          </li>
+
+          <li>
+            <a href="koboKanaeru.html">Kobo Kanaeru</a>
+          </li>
+
+          <li>
+            <a href="kaelaKovalskia.html">Kaela Kovalskia</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList">
+        <h2 class="nav-title">Fanart</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="fanart.html">Video</a>
+          </li>
+
+          <li>
+            <a href="fanart.html">Illustration</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-navList nav-third">
+        <h2 class="nav-title">Join</h2>
+
+        <ul class="footer-navUl">
+          <li>
+            <a href="join.html">Rules</a>
+          </li>
+
+          <li>
+            <a href="join.html">Join Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <p>&copy; 2022 Kelompok 1 - Tugas Besar. All rights reserved.</p>
+
+      <div class="madeBy">
+        <span>Made by Aqbil, Roger, Filbert, Habil</span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const nav = document.querySelector('nav');
+    const a = document.querySelectorAll('.navbar-menu a');
+    console.log(a);
+    window.onscroll = function () {
+      var top = window.scrollY;
+      for (let index = 0; index < a.length; index++) {
+        if (top >= 50) {
+          nav.classList.add('activeScroll_nav');
+          a[index].classList.add('activeScroll_link');
+        } else {
+          nav.classList.remove('activeScroll_nav');
+          a[index].classList.remove('activeScroll_link');
+        }
+      }
+    }
+
+
+    $(".read").click(function () {
+      $(".pageRules").addClass("reveal");
+      $(".pageForm").removeClass("reveal");
+    });
+
+    $(".submit").click(function () {
+      var cek = document.getElementsByTagName("input");
+
+      var validasi = false;
+      var nama = false;
+
+      var ultah = false;
+      var tahun = document.getElementById("ultah");
+      var valueTahun = new Date(tahun.value);
+      var cekTahun = valueTahun.getFullYear();
+
+      var pilihan = false;
+      var telepon = false;
+      var patternID = /^[\+]?[(]?[0-9]{2}[)]?[0-9]{10,13}$/im; 
+      //regex pattern nomor telepon polanya itu +62 (wajib diisi).
+      //sesuai dengan panjang digit nomor di Indonesia
+      //Panjang digit nomor kartu itu dari 10-13 (bisa diterima)
+
+
+      if (cek[1].type === "text" && cek[1].value != "") {
+        nama = true;
+        $(".text1").addClass("errorReveal");
+        $(".label1").removeClass("labelMargin");
+      } else {
+        $(".label1").addClass("labelMargin");
+        $(".text1").removeClass("errorReveal");
+      }
+
+      if (cek[2].type === "date" && cek[2].value != "" && cekTahun <= 2009) {
+        ultah = true;
+        $(".text2").addClass("errorReveal");
+        $(".label2").removeClass("labelMargin");
+      } else {
+        $(".label2").addClass("labelMargin");
+        $(".text2").removeClass("errorReveal");
+      }
+
+      for (let i = 0; i < cek.length; i++) {
+        if (cek[i].type === "radio" && cek[i].checked) {
+          pilihan = true;
+        }
+      }
+
+      if (cek[6].type === "text" && cek[6].value != "" && patternID.test(cek[6].value)) {
+        telepon = true;
+        $(".text3").addClass("errorReveal");
+        $(".label3").removeClass("labelMargin");
+      } else {
+        $(".label3").addClass("labelMargin");
+        $(".text3").removeClass("errorReveal");
+      }
+
+
+      if (nama && ultah && pilihan && telepon) {
+        validasi = true;
+      } else {
+        alert("Diharapkan isi semua formnya!");
+      }
+
+      if (validasi) {
+        $(".pageForm").addClass("reveal");
+        $(".message").removeClass("reveal");
+        alert("Anda Telah Berhasil Mengirim Form! Terima Kasih!")
+      }
+    });
+
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    $(".back").click(function () {
+      window.location.reload();
+    });
+
+
+  </script>
+  </body>
+
+</html>

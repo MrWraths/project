@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="Assets/hololive-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="fanart.css">
+    <link rel="stylesheet" href="CSS/font-worksans.css">
+    <link rel="stylesheet" href="CSS/navigation-bar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @media only screen and (min-width: 52em) {
+            nav {
+                background-color: white;
+                width: 100%;
+            }
+
+            nav a {
+                color: black;
+                text-shadow: none;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                background-color: white;
+                width: 100%;
+            }
+
+            nav a {
+                color: black;
+                text-shadow: none;
+            }
+        }
+    </style>
+    <title>Fan Art</title>
+</head>
+
+<body>
+
+    <!--Hololive Navigation Bar-->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="Logo Fanbase hololive (shadow).png" alt="hololive_logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="talent.html">Talents</a></li>
+                <li><a href="fanart.html">Fan Art</a></li>
+                <li><a href="Join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hololive Navigation Bar-->
+
+    <header id="top">
+        <div class="container-header">
+            <h1>Fan Art</h1>
+        </div>
+    </header>
+
+    <div id="bookmarkFanArt">
+        <button class="fill active bookmark" data-button="all">ALL</button>
+
+        <a href="#lihatIlustrasi" style="text-decoration: none;">
+            <button class="fill bookmark" data-button="ilustrasi">Ilustrasi</button>
+        </a>
+
+        <a href="#lihatVideo" style="text-decoration: none;">
+            <button class="fill bookmark" data-button="video">Video</button>
+        </a>
+    </div>
+
+    <div id="myBtnShow">
+        <button class="fill active holoTalent" data-button="all">ALL</button>
+        <button class="fill holoTalent" data-button="risu">Ayunda Risu</button>
+        <button class="fill holoTalent" data-button="iofi">Airani Iofifteen</button>
+        <button class="fill holoTalent" data-button="moona">Moona Hoshinova</button>
+        <button class="fill holoTalent" data-button="ollie">Kureiji Ollie</button>
+        <button class="fill holoTalent" data-button="anya">Anya Melfissa</button>
+        <button class="fill holoTalent" data-button="reine">Pavolia Reine</button>
+        <button class="fill holoTalent" data-button="zeta">Vestia Zeta</button>
+        <button class="fill holoTalent" data-button="kobo">Kobo Kanaeru</button>
+        <button class="fill holoTalent" data-button="kaela">Kaela Kovalskia</button>
+    </div>
+
+    <main>
+        <section>
+            <div class="container-fanart ilustrasi" id="lihatIlustrasi">
+                <h1>Ilustrasi</h1>
+                <ul class="list-ilustrasi">
+                    <li class="talents risu">
+                        <a href="https://www.instagram.com/p/CkyLmoIuhGL/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/risu_pict (1).jpg"
+                                alt="risu_pict(1)"></a>
+                    </li>
+                    <li class="talents moona">
+                        <a href="https://www.instagram.com/p/CklZWzVhojq/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/moona_pict(1).webp"
+                                alt="moona_pict(1)"></a>
+                    </li>
+                    <li class="talents iofi">
+                        <a href="https://www.instagram.com/p/ChoFLIzIPEa/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/iofi_pict(1).webp"
+                                alt="iofi_pict(1)"></a>
+                    </li>
+                    <li class="talents ollie">
+                        <a href="https://www.instagram.com/p/Cacl2F-OWpv/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/ollie_pict(1).webp"
+                                alt="ollie_pict(1)"></a>
+                    </li>
+                    <li class="talents anya">
+                        <a href="https://www.instagram.com/p/CQGg9VWhOmi/?utm_source=ig_web_copy_link" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/anya_pict(1).jpg"
+                                alt="anya_pict(1)"></a>
+                    </li>
+                    <li class="talents reine">
+                        <a href="https://www.instagram.com/p/CLPdND2gB4h/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/reine_pict(1).jpg"
+                                alt="reine_pict(1)"></a>
+                    </li>
+                    <li class="talents zeta">
+                        <a href="https://www.instagram.com/p/CeykBEgr0Zm/?utm_source=ig_web_copy_link" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/zeta_pict(1).webp"
+                                alt="zeta_pict(1)"></a>
+                    </li>
+                    <li class="talents kobo">
+                        <a href="https://www.instagram.com/p/CjAfZt3PdCd/?utm_source=ig_web_copy_link" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/kobo_pict(1).webp"
+                                alt="kobo_pict(1)"></a>
+                    </li>
+                    <li class="talents kaela">
+                        <a href="https://www.instagram.com/p/ChKavaohhh0/?utm_source=ig_web_copy_link" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/kaela_pict(1).webp"
+                                alt="kaela_pict(1)"></a>
+                    </li>
+
+                    <li class="talents risu">
+                        <a href="https://www.instagram.com/p/CaTuKZsvrnC/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/risu_pict(2).webp"
+                                alt="risu_pict(2)"></a>
+                    </li>
+                    <li class="talents moona">
+                        <a href="https://www.instagram.com/p/CirtzBZhLWG/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/moona_pict(2).webp"
+                                alt="moona_pict(2)"></a>
+                    </li>
+                    <li class="talents iofi">
+                        <a href="https://www.instagram.com/p/CWPUE-JI3Gy/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/iofi_pict(2).webp"
+                                alt="iofi_pict(2)"></a>
+                    </li>
+                    <li class="talents ollie">
+                        <a href="https://www.instagram.com/p/CXfK_0esxxz/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/ollie_pict(2).jpg"
+                                alt="ollie_pict(2)"></a>
+                    </li>
+                    <li class="talents anya">
+                        <a href="https://www.instagram.com/p/CQGhEoPhiTh/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/anya_pict(2).jpg"
+                                alt="anya_pict(2)"></a>
+                    </li>
+                    <li class="talents reine">
+                        <a href="https://www.instagram.com/p/CKnTpjrh5_z/?utm_source=ig_web_copy_link" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/reine_pict(2).jpg"
+                                alt="reine_pict(2)"></a>
+                    </li>
+                    <li class="talents zeta">
+                        <a href="https://www.instagram.com/p/Cc9v76vsBHD/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/zeta pict(2).webp"
+                                alt="zeta_pict(2)"></a>
+                    </li>
+                    <li class="talents kobo">
+                        <a href="https://www.instagram.com/p/CiIS0RvLpyC/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/kobo_pict(2).webp"
+                                alt="kobo_pict(2)"></a>
+                    </li>
+                    <li class="talents kaela">
+                        <a href="https://www.instagram.com/p/CjQPchFBX3Y/" target="_blank"
+                            rel="noopener noreferrer"><img src="Assets/Fan Art Illustration/kaela_pict(2).webp"
+                                alt="kaela_pict(2)"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-fanart video" id="lihatVideo">
+                <h1>Video</h1>
+                <ul class="list-ilustrasi">
+                    <li class="talents kobo">
+                        <a href="https://www.youtube.com/watch?v=mU4qyHhEH20" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/kobo_video.jpg" alt="kobo_video">
+                        </a>
+                    </li>
+                    <li class="talents moona">
+                        <a href="https://www.youtube.com/watch?v=_i4KiLSLqg4" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/moona_video.jpg" alt="moona_video">
+                        </a>
+                    </li>
+                    <li class="talents ollie">
+                        <a href="https://www.youtube.com/watch?v=BJgWRBqanc8" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/ollie_video.jpg" alt="ollie_video">
+                        </a>
+                    </li>
+                    <li class="talents risu">
+                        <a href="https://youtu.be/YzeFOqNGQ1A" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/risu_video.jpg" alt="risu_video">
+                        </a>
+                    </li>
+                    <li class="talents zeta">
+                        <a href="https://www.youtube.com/watch?v=KzfUU2kiImU" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/zeta_video.jpg" alt="zeta_video">
+                        </a>
+                    </li>
+                    <li class="talents reine">
+                        <a href="https://www.youtube.com/watch?v=WGC8gNIbtt0" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/reine_video.jpg" alt="reine_video">
+                        </a>
+                    </li>
+                    <li class="talents anya">
+                        <a href="https://www.youtube.com/watch?v=4TjA2Y8Ru7Q" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/anya_video.jpg" alt="anya_video">
+                        </a>
+                    </li>
+                    <li class="talents iofi">
+                        <a href="https://www.youtube.com/watch?v=XGYTTx0PF6s" target="_blank" rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/iofi_video.jpg" alt="iofi_video">
+                        </a>
+                    </li>
+                    <li class="talents kaela">
+                        <a href="https://www.youtube.com/watch?v=uknvNt5ZgpQ&t=47s" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="Assets/Fan Art Video/kaela_video.jpg" alt="kaela_video">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contactUs">
+            <img src="Logo Fanbase hololive (non-shadow).png" alt="logo_hololiveFanBase">
+            <h2>Contact</h1>
+
+                <address>
+                    Jawa Barat - Bandung<br>
+
+                    <a class="button-linkTree" href="https://msha.ke/holoidfanpage" target="_blank">Contact Us</a>
+                </address>
+        </div>
+
+        <ul class="footer-Nav">
+            <li class="footer-navList">
+                <h2 class="nav-title">Gen 1</h2>
+
+                <ul class="footer-navUl">
+                    <li>
+                        <a href="moonaHoshinova.html">Moona Hoshinova</a>
+                    </li>
+
+                    <li>
+                        <a href="airaniIofifteen.html">Airani Iofifteen</a>
+                    </li>
+
+                    <li>
+                        <a href="ayundaRisu.html">Ayunda Risu</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="footer-navList">
+                <h2 class="nav-title">Gen 2</h2>
+
+                <ul class="footer-navUl">
+                    <li>
+                        <a href="kureijiOllie.html">Kureiji Ollie</a>
+                    </li>
+
+                    <li>
+                        <a href="anyaMelfissa.html">Anya Melfissa</a>
+                    </li>
+
+                    <li>
+                        <a href="pavoliaReine.html">Pavolia Reine</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer-navList nav-second">
+                <h2 class="nav-title">Gen 3</h2>
+
+                <ul class="footer-navUl">
+                    <li>
+                        <a href="vestiaZeta.html">Vestia Zeta</a>
+                    </li>
+
+                    <li>
+                        <a href="koboKanaeru.html">Kobo Kanaeru</a>
+                    </li>
+
+                    <li>
+                        <a href="kaelaKovalskia.html">Kaela Kovalskia</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer-navList">
+                <h2 class="nav-title">Fanart</h2>
+
+                <ul class="footer-navUl">
+                    <li>
+                        <a href="fanart.html">Video</a>
+                    </li>
+
+                    <li>
+                        <a href="fanart.html">Illustration</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer-navList nav-third">
+                <h2 class="nav-title">Join</h2>
+
+                <ul class="footer-navUl">
+                    <li>
+                        <a href="join.html">Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join Us</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="copyright">
+            <p>&copy; 2022 Kelompok 1 - Tugas Besar. All rights reserved.</p>
+
+            <div class="madeBy">
+                <span>Made by Aqbil, Roger, Filbert, Habil</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true" id="to-top"></i></a>
+
+    <script>
+        const nav = document.querySelector('nav');
+        const a = document.querySelectorAll('.navbar-menu a');
+        console.log(a);
+        window.onscroll = function () {
+            var top = window.scrollY;
+            for (let index = 0; index < a.length; index++) {
+                if (top >= 50) {
+                    nav.classList.add('activeScroll_nav');
+                    a[index].classList.add('activeScroll_link');
+                } else {
+                    nav.classList.remove('activeScroll_nav');
+                    a[index].classList.remove('activeScroll_link');
+                }
+            }
+        }
+
+        $(".bookmark").click(function () {
+            var cari = $(this).attr("data-button");
+
+            $(".bookmark").removeClass("active");
+            $(this).addClass("active");
+
+            $(".container-fanart").hide(1000);
+
+            if (cari == "ilustrasi") {
+                $(".ilustrasi").show(1000);
+            } else if (cari == "video") {
+                $(".video").show(1000);
+            } else {
+                $(".container-fanart").show(1000);
+            }
+        });
+
+        $(".holoTalent").click(function () {
+            var attr = $(this).attr("data-button");
+
+            $(".holoTalent").removeClass("active");
+            $(this).addClass("active");
+
+            $(".talents").hide(1000);
+
+            if (attr == "risu") {
+                $(".risu").show(1000);
+            }
+            else if (attr == "iofi") {
+                $(".iofi").show(1000);
+            }
+            else if (attr == "moona") {
+                $(".moona").show(1000);
+            } else if (attr == "ollie") {
+                $(".ollie").show(1000);
+            }
+            else if (attr == "anya") {
+                $(".anya").show(1000);
+            } else if (attr == "reine") {
+                $(".reine").show(1000);
+            }
+            else if (attr == "zeta") {
+                $(".zeta").show(1000);
+            } else if (attr == "kobo") {
+                $(".kobo").show(1000);
+            }
+            else if (attr == "kaela") {
+                $(".kaela").show(1000);
+            } else {
+                $(".talents").show(1000);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
